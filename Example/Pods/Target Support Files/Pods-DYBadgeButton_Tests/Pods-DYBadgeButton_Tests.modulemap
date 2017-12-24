@@ -1,0 +1,6 @@
+framework module Pods_DYBadgeButton_Tests {
+  umbrella header "Pods-DYBadgeButton_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

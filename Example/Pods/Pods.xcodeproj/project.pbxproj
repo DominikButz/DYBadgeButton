@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0EEE1B0CFDA34A3E8F8470D0A55F4A /* Pods-DYBadgeButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A86F74B081CE6C9512C5D8F3B4A6F73B /* Pods-DYBadgeButton_Tests-dummy.m */; };
+		4CD5E3DAD2F1677314F57E17683E0ADD /* Pods-DYBadgeButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1808E4730D6C5BFBA2636334488EFEF /* Pods-DYBadgeButton_Example-dummy.m */; };
+		541E06C3D5FE40A3E488000CAAEE2FD7 /* DYBadgeButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD2A5064BCE2EEB0D3B19755CF0C814 /* DYBadgeButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F966D0514E7786D2918130C4BFB15BB /* DYBadgeButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA0CA00F8FFCB7E10C5D61B2647C0C /* DYBadgeButton-dummy.m */; };
+		66163F86837DA8F5ED03C6961B659296 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		70B00711B8D5B2F5F8FFF8F19002C3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		86FE0D30B49A6106138BB782E6D9B9ED /* Pods-DYBadgeButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 483CF693F20FD065A5EC846848A8BD14 /* Pods-DYBadgeButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B400295F1FEF6846007241E3 /* DYBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B400295E1FEF6845007241E3 /* DYBadgeButton.swift */; };
+		B62608E19AAACE693312AE04553C7775 /* Pods-DYBadgeButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C230C19FB135E0352B4EB3C4501653 /* Pods-DYBadgeButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED5DA29917DB352E0F89A2E021E61F67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1C8AA671DA52B06F9EA69C107C660C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17E50FDA3AD4E210F1B2C31A8FAC7E44;
+			remoteInfo = DYBadgeButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BDA0CA00F8FFCB7E10C5D61B2647C0C /* DYBadgeButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DYBadgeButton-dummy.m"; sourceTree = "<group>"; };
+		0F731AE81057F4A9E34E4F50FBF5A171 /* Pods-DYBadgeButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DYBadgeButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		13F33D92BBDEA5E02C8C45037913F134 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1869838233D3D7122460854519FC162E /* Pods_DYBadgeButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYBadgeButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23852C043FAE9BDF7E66C0CE3B50CE42 /* Pods-DYBadgeButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DYBadgeButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		29701DB8573C17FF0E02513515123498 /* DYBadgeButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DYBadgeButton-prefix.pch"; sourceTree = "<group>"; };
+		29754D9C7DB56F2C2C386DAD2E1B02A2 /* Pods-DYBadgeButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DYBadgeButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		36944130E57A0070AB7E49F83C09A99E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D1627415F0DF7E7F266E82DA386D62 /* Pods-DYBadgeButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DYBadgeButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		483CF693F20FD065A5EC846848A8BD14 /* Pods-DYBadgeButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DYBadgeButton_Example-umbrella.h"; sourceTree = "<group>"; };
+		4F02062176BB0B6C5D7E3C32370616AA /* Pods-DYBadgeButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DYBadgeButton_Tests.modulemap"; sourceTree = "<group>"; };
+		62D06F5ED921BAEEED40F596A6313CEB /* Pods-DYBadgeButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DYBadgeButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6B991D6EF693B9FB0CFE86E67A1E9379 /* Pods-DYBadgeButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DYBadgeButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EA93AAB7ED354947D7936E5A41264DA /* Pods-DYBadgeButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DYBadgeButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6FBA3839A51BE2871BD06165DEE17197 /* Pods-DYBadgeButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DYBadgeButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8B929BC4F8B9CD5502E7DB608CB78417 /* Pods_DYBadgeButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYBadgeButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD2A5064BCE2EEB0D3B19755CF0C814 /* DYBadgeButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DYBadgeButton-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FDEE1C5168FEA400C968DAF4D1AE2F9 /* Pods-DYBadgeButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DYBadgeButton_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A52295CA7C94965D122F816F47A4DFF4 /* Pods-DYBadgeButton_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DYBadgeButton_Example-resources.sh"; sourceTree = "<group>"; };
+		A6BFF1158F731703BF17C496FAA90940 /* DYBadgeButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DYBadgeButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A86F74B081CE6C9512C5D8F3B4A6F73B /* Pods-DYBadgeButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DYBadgeButton_Tests-dummy.m"; sourceTree = "<group>"; };
+		A9FA8FB22F45196CE08E647A55AB27F1 /* DYBadgeButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DYBadgeButton.xcconfig; sourceTree = "<group>"; };
+		AECF9130901162A478C61A48C4698EA9 /* Pods-DYBadgeButton_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DYBadgeButton_Tests-resources.sh"; sourceTree = "<group>"; };
+		B02D74F25EA2E00C18B048A784AE134C /* DYBadgeButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DYBadgeButton.modulemap; sourceTree = "<group>"; };
+		B400295E1FEF6845007241E3 /* DYBadgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DYBadgeButton.swift; path = DYBadgeButton/Classes/DYBadgeButton.swift; sourceTree = "<group>"; };
+		C45AA798FA5D8290F9511E7C79D023A1 /* Pods-DYBadgeButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DYBadgeButton_Example.modulemap"; sourceTree = "<group>"; };
+		D8F1865A630D075E459C17FE649B5B7D /* Pods-DYBadgeButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DYBadgeButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		D93FB7EFFBE48EDE24C5EBBB54D2C1FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1808E4730D6C5BFBA2636334488EFEF /* Pods-DYBadgeButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DYBadgeButton_Example-dummy.m"; sourceTree = "<group>"; };
+		F8C230C19FB135E0352B4EB3C4501653 /* Pods-DYBadgeButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DYBadgeButton_Tests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		376751580ED5176B6FBA93D2A14C18E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70B00711B8D5B2F5F8FFF8F19002C3B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D8694115F06EDB8B6C11A6230604EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66163F86837DA8F5ED03C6961B659296 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4973ABE6567531239687DCADB1C583D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5DA29917DB352E0F89A2E021E61F67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DF8AD5C3930979BE1D18FEFE8582A61 /* Pods-DYBadgeButton_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				13F33D92BBDEA5E02C8C45037913F134 /* Info.plist */,
+				4F02062176BB0B6C5D7E3C32370616AA /* Pods-DYBadgeButton_Tests.modulemap */,
+				46D1627415F0DF7E7F266E82DA386D62 /* Pods-DYBadgeButton_Tests-acknowledgements.markdown */,
+				0F731AE81057F4A9E34E4F50FBF5A171 /* Pods-DYBadgeButton_Tests-acknowledgements.plist */,
+				A86F74B081CE6C9512C5D8F3B4A6F73B /* Pods-DYBadgeButton_Tests-dummy.m */,
+				D8F1865A630D075E459C17FE649B5B7D /* Pods-DYBadgeButton_Tests-frameworks.sh */,
+				AECF9130901162A478C61A48C4698EA9 /* Pods-DYBadgeButton_Tests-resources.sh */,
+				F8C230C19FB135E0352B4EB3C4501653 /* Pods-DYBadgeButton_Tests-umbrella.h */,
+				6B991D6EF693B9FB0CFE86E67A1E9379 /* Pods-DYBadgeButton_Tests.debug.xcconfig */,
+				23852C043FAE9BDF7E66C0CE3B50CE42 /* Pods-DYBadgeButton_Tests.release.xcconfig */,
+			);
+			name = "Pods-DYBadgeButton_Tests";
+			path = "Target Support Files/Pods-DYBadgeButton_Tests";
+			sourceTree = "<group>";
+		};
+		388EEF2C530A243CF88BE881FAC68A48 /* Pods-DYBadgeButton_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D93FB7EFFBE48EDE24C5EBBB54D2C1FD /* Info.plist */,
+				C45AA798FA5D8290F9511E7C79D023A1 /* Pods-DYBadgeButton_Example.modulemap */,
+				6EA93AAB7ED354947D7936E5A41264DA /* Pods-DYBadgeButton_Example-acknowledgements.markdown */,
+				29754D9C7DB56F2C2C386DAD2E1B02A2 /* Pods-DYBadgeButton_Example-acknowledgements.plist */,
+				F1808E4730D6C5BFBA2636334488EFEF /* Pods-DYBadgeButton_Example-dummy.m */,
+				9FDEE1C5168FEA400C968DAF4D1AE2F9 /* Pods-DYBadgeButton_Example-frameworks.sh */,
+				A52295CA7C94965D122F816F47A4DFF4 /* Pods-DYBadgeButton_Example-resources.sh */,
+				483CF693F20FD065A5EC846848A8BD14 /* Pods-DYBadgeButton_Example-umbrella.h */,
+				62D06F5ED921BAEEED40F596A6313CEB /* Pods-DYBadgeButton_Example.debug.xcconfig */,
+				6FBA3839A51BE2871BD06165DEE17197 /* Pods-DYBadgeButton_Example.release.xcconfig */,
+			);
+			name = "Pods-DYBadgeButton_Example";
+			path = "Target Support Files/Pods-DYBadgeButton_Example";
+			sourceTree = "<group>";
+		};
+		4A3D88003AB1C49CBF073564ECFEA923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6BFF1158F731703BF17C496FAA90940 /* DYBadgeButton.framework */,
+				8B929BC4F8B9CD5502E7DB608CB78417 /* Pods_DYBadgeButton_Example.framework */,
+				1869838233D3D7122460854519FC162E /* Pods_DYBadgeButton_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				9A7B8EBBD665824E6891FD987F3DDB8A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4A3D88003AB1C49CBF073564ECFEA923 /* Products */,
+				CEF834B71610DD741B404BE20D00560F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9A7B8EBBD665824E6891FD987F3DDB8A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9C6F7CAAA6A43DF0C387EA744A4C63D /* DYBadgeButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A9C6F7CAAA6A43DF0C387EA744A4C63D /* DYBadgeButton */ = {
+			isa = PBXGroup;
+			children = (
+				B400295E1FEF6845007241E3 /* DYBadgeButton.swift */,
+				F8371162B4AC6DCBA7DE3562F12FE71C /* Support Files */,
+			);
+			name = DYBadgeButton;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEF834B71610DD741B404BE20D00560F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				388EEF2C530A243CF88BE881FAC68A48 /* Pods-DYBadgeButton_Example */,
+				2DF8AD5C3930979BE1D18FEFE8582A61 /* Pods-DYBadgeButton_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F8371162B4AC6DCBA7DE3562F12FE71C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B02D74F25EA2E00C18B048A784AE134C /* DYBadgeButton.modulemap */,
+				A9FA8FB22F45196CE08E647A55AB27F1 /* DYBadgeButton.xcconfig */,
+				0BDA0CA00F8FFCB7E10C5D61B2647C0C /* DYBadgeButton-dummy.m */,
+				29701DB8573C17FF0E02513515123498 /* DYBadgeButton-prefix.pch */,
+				8FD2A5064BCE2EEB0D3B19755CF0C814 /* DYBadgeButton-umbrella.h */,
+				36944130E57A0070AB7E49F83C09A99E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DYBadgeButton";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		35FD15FC107650EBCC6A7C4D7EA6A523 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541E06C3D5FE40A3E488000CAAEE2FD7 /* DYBadgeButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5662501779216184785831E6E0D46460 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FE0D30B49A6106138BB782E6D9B9ED /* Pods-DYBadgeButton_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6C734B392411041EBBE4B9B1F91CCAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62608E19AAACE693312AE04553C7775 /* Pods-DYBadgeButton_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		17E50FDA3AD4E210F1B2C31A8FAC7E44 /* DYBadgeButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91CC6F509F3E2E8F4449F542ACBDE201 /* Build configuration list for PBXNativeTarget "DYBadgeButton" */;
+			buildPhases = (
+				34FCDC55E6A9F07B39CB1064795B22C6 /* Sources */,
+				7D8694115F06EDB8B6C11A6230604EB9 /* Frameworks */,
+				35FD15FC107650EBCC6A7C4D7EA6A523 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYBadgeButton;
+			productName = DYBadgeButton;
+			productReference = A6BFF1158F731703BF17C496FAA90940 /* DYBadgeButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73332E4DD26B6A527445C16D9277E280 /* Pods-DYBadgeButton_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A2C7431988582F201160291C86A26F9 /* Build configuration list for PBXNativeTarget "Pods-DYBadgeButton_Example" */;
+			buildPhases = (
+				DEBAC865E9F7B3AA6B067E14BD5F6FDF /* Sources */,
+				D4973ABE6567531239687DCADB1C583D /* Frameworks */,
+				5662501779216184785831E6E0D46460 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D495940516586FE121D7F1DCFAE8FA33 /* PBXTargetDependency */,
+			);
+			name = "Pods-DYBadgeButton_Example";
+			productName = "Pods-DYBadgeButton_Example";
+			productReference = 8B929BC4F8B9CD5502E7DB608CB78417 /* Pods_DYBadgeButton_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E61002FA1F1B046E500AAA58C8669D2D /* Pods-DYBadgeButton_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46B86CC84689EF2FF61A9430DAD94321 /* Build configuration list for PBXNativeTarget "Pods-DYBadgeButton_Tests" */;
+			buildPhases = (
+				D7EB585DBF5DC6918400D03FBBD1EC51 /* Sources */,
+				376751580ED5176B6FBA93D2A14C18E6 /* Frameworks */,
+				B6C734B392411041EBBE4B9B1F91CCAF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DYBadgeButton_Tests";
+			productName = "Pods-DYBadgeButton_Tests";
+			productReference = 1869838233D3D7122460854519FC162E /* Pods_DYBadgeButton_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4A3D88003AB1C49CBF073564ECFEA923 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17E50FDA3AD4E210F1B2C31A8FAC7E44 /* DYBadgeButton */,
+				73332E4DD26B6A527445C16D9277E280 /* Pods-DYBadgeButton_Example */,
+				E61002FA1F1B046E500AAA58C8669D2D /* Pods-DYBadgeButton_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34FCDC55E6A9F07B39CB1064795B22C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B400295F1FEF6846007241E3 /* DYBadgeButton.swift in Sources */,
+				5F966D0514E7786D2918130C4BFB15BB /* DYBadgeButton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EB585DBF5DC6918400D03FBBD1EC51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0EEE1B0CFDA34A3E8F8470D0A55F4A /* Pods-DYBadgeButton_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEBAC865E9F7B3AA6B067E14BD5F6FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD5E3DAD2F1677314F57E17683E0ADD /* Pods-DYBadgeButton_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D495940516586FE121D7F1DCFAE8FA33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DYBadgeButton;
+			target = 17E50FDA3AD4E210F1B2C31A8FAC7E44 /* DYBadgeButton */;
+			targetProxy = B1C8AA671DA52B06F9EA69C107C660C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3D3E1F0497986DA7CD22E669C8F87ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D06F5ED921BAEEED40F596A6313CEB /* Pods-DYBadgeButton_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DYBadgeButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DYBadgeButton_Example/Pods-DYBadgeButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DYBadgeButton_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4DC1E3D82B878571C779E1540D25E8C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23852C043FAE9BDF7E66C0CE3B50CE42 /* Pods-DYBadgeButton_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DYBadgeButton_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DYBadgeButton_Tests/Pods-DYBadgeButton_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DYBadgeButton_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B8FCA33308AD149D6CAE613CF006EB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9FA8FB22F45196CE08E647A55AB27F1 /* DYBadgeButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DYBadgeButton/DYBadgeButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DYBadgeButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DYBadgeButton/DYBadgeButton.modulemap";
+				PRODUCT_NAME = DYBadgeButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		82F54F3F5371351B553EAEA146721A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9FA8FB22F45196CE08E647A55AB27F1 /* DYBadgeButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DYBadgeButton/DYBadgeButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DYBadgeButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DYBadgeButton/DYBadgeButton.modulemap";
+				PRODUCT_NAME = DYBadgeButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		871729F1CF0DECC3B75B0036FF0A7028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B991D6EF693B9FB0CFE86E67A1E9379 /* Pods-DYBadgeButton_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DYBadgeButton_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DYBadgeButton_Tests/Pods-DYBadgeButton_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DYBadgeButton_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2AEA7784C5F2147F42D41A98C9740F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FBA3839A51BE2871BD06165DEE17197 /* Pods-DYBadgeButton_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DYBadgeButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DYBadgeButton_Example/Pods-DYBadgeButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DYBadgeButton_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A2C7431988582F201160291C86A26F9 /* Build configuration list for PBXNativeTarget "Pods-DYBadgeButton_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3E1F0497986DA7CD22E669C8F87ECA /* Debug */,
+				D2AEA7784C5F2147F42D41A98C9740F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46B86CC84689EF2FF61A9430DAD94321 /* Build configuration list for PBXNativeTarget "Pods-DYBadgeButton_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				871729F1CF0DECC3B75B0036FF0A7028 /* Debug */,
+				4DC1E3D82B878571C779E1540D25E8C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91CC6F509F3E2E8F4449F542ACBDE201 /* Build configuration list for PBXNativeTarget "DYBadgeButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F54F3F5371351B553EAEA146721A83 /* Debug */,
+				6B8FCA33308AD149D6CAE613CF006EB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

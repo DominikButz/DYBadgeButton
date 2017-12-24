@@ -1,0 +1,6 @@
+framework module DYBadgeButton {
+  umbrella header "DYBadgeButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
