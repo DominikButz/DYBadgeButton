@@ -23,14 +23,20 @@ class ViewController: UIViewController {
         
         self.firstSlider.isContinuous = false
         
-//        let frame =  CGRect(x: 0, y: 0, width: 25.0, height: 26.0)
-//        let font = UIFont(name: "Helvetica Neue", size: 11.0)!
-//        let color = self.view.tintColor
-//        let filterButton  = DYBadgeButton.createDYImageTitleButton(image: #imageLiteral(resourceName: "filterButton"), title: "Filter", font: font, frame: frame, tintColor: color!)
-//        filterButton.badgeColor = color!
-//        filterButton.xOffset = -10.0
-//        filterButton.yOffset = -5.0
-//        self.secondButtonItem.customView = filterButton
+        self.firstButton.badgeFont = UIFont(name: "Helvetica Neue", size: 11.0)!
+        self.firstButton.badgeString = "5"
+        self.firstSlider.value = 5.0
+        
+        
+        self.secondSlider.isContinuous = false
+        let frame =  CGRect(x: 0, y: 0, width: 25.0, height: 26.0)
+        let font = UIFont(name: "Helvetica Neue", size: 11.0)!
+        let color = self.view.tintColor
+        let filterButton  = DYBadgeButton.createDYImageTitleButton(image: #imageLiteral(resourceName: "filterButton"), title: "Filter", font: font, frame: frame, tintColor: color!)
+        filterButton.badgeColor = color!
+        filterButton.xOffset = -15.0
+        filterButton.yOffset = -5.0
+        self.secondButtonItem.customView = filterButton
 
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -44,7 +50,9 @@ class ViewController: UIViewController {
     @IBAction func sliderValueDidChange(_ sender: UISlider) {
         
         if sender == self.firstSlider {
-            self.firstButton!.badgeString = "\(Int(sender.value))"
+            let intValue = Int(sender.value)
+            
+            self.firstButton!.badgeString = intValue != 0 ? "\(intValue)" : nil
             
         } else {
             // second slider

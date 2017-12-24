@@ -44,6 +44,7 @@ extension UIButton {
     
    @IBInspectable open var badgeString:String? {
         didSet{
+            
             self.badge.text = badgeString
             print("badge string \(badgeString)")
             self.setBadgeSizeAndFrame()
@@ -53,6 +54,8 @@ extension UIButton {
             
             if self.badge.isHidden && self.badgeHasValue() {
                 // is hidden but should appear
+                self.badge.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+                print("badge is hidden, has value, target transform is identity")
                 transform = CGAffineTransform.identity
                 shouldHide = false
           
@@ -60,14 +63,15 @@ extension UIButton {
             
             else if self.badge.isHidden == false && self.badgeHasValue() == false {
                 // should disappear
+                     print("badge is  not hidden, has  no value, target transform 0.01 0.01")
                 transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
                 shouldHide = true
 
             } else {
-               
+             
                 return
             }
-            print("animating badge")
+    
             self.animateBadge(shouldHide: shouldHide!,transform: transform!)
 
         }
@@ -147,8 +151,6 @@ extension UIButton {
         self.badge.textColor = self.badgeTextColor
         
         self.setBadgeSizeAndFrame()
-        self.badge.clipsToBounds = true
-        self.badge.layer.cornerRadius = self.badge.bounds.height / 2.0
 
         self.badge.isHidden = !self.badgeHasValue()
        // self.badge.transform = self.badgeHasValue() ?  CGAffineTransform.identity : CGAffineTransform(scaleX: 0.01, y: 0.01)
@@ -160,8 +162,13 @@ extension UIButton {
 
     private func setBadgeSizeAndFrame() {
         
+        if self.badgeHasValue() == false {
+            return
+        }
+        
         let sizeLabel = UILabel()
-        sizeLabel.text = self.badgeHasValue() ? self.badgeString : "XX"
+        sizeLabel.text = self.badgeString!
+       // sizeLabel.text = self.badgeHasValue() ? self.badgeString : "XX"
         sizeLabel.font = self.badgeFont
         sizeLabel.sizeToFit()
         let badgeSize = sizeLabel.frame.size
@@ -174,7 +181,8 @@ extension UIButton {
         self.badge.transform = CGAffineTransform.identity
         
         self.badge.frame = CGRect(x: positionX + self.xOffset, y: positionY + self.yOffset, width: badgeSize.width + 8.0, height: badgeSize.height + 2.0)
-        
+        self.badge.clipsToBounds = true
+        self.badge.layer.cornerRadius = self.badge.bounds.height / 2.0
         
         print("badge width: \(self.badge.frame.size.width)")
         print("badge origin x \(self.badge.frame.origin.x), origin y \(self.badge.frame.origin.y)")
@@ -188,15 +196,18 @@ extension UIButton {
     
     private func animateBadge(shouldHide: Bool, transform: CGAffineTransform) {
         print("animating badge")
-        let springValue:CGFloat = shouldHide ? 0.4 : 0.0
+        let springValue:CGFloat = shouldHide ? 0.0 : 0.4
         
+        if shouldHide == false {
+        
+            self.badge.isHidden = false
+  
+        }
 
+    
+        UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: springValue, initialSpringVelocity: 0.0, options: [], animations: {
 
-        UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: springValue, initialSpringVelocity: 0.1, options: [], animations: {
-            if shouldHide == false {
-                
-                self.badge.isHidden = false
-            }
+            print("animation started. transform is identiy? \(transform == CGAffineTransform.identity)")
             self.badge.transform = transform
             
         }) { (completed) in
