@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DYBadgeButton_Example' do
+  pod 'DYBadgeButton', :path => '../'
+
+  target 'DYBadgeButton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
