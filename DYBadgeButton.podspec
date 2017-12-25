@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DYBadgeButton'
-  s.version          = '0.3.3'
-  s.summary          = 'UI Button with an animated badge'
+  s.version          = '0.3.4'
+  s.summary          = 'UI Button with an animated badge, written in Swift 4'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -22,10 +22,10 @@ Pod::Spec.new do |s|
     The class also includes a class function to create a button with an image and a title, which is positioned underneath the image.
                        DESC
 
-  s.homepage         = 'https://github.com/dominikbutz/DYBadgeButton'
+  s.homepage         = 'https://github.com/DominikButz/DYBadgeButton'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'dominikbutz' => 'dominikbutz@gmail.com' }
-  s.source           = { :git => 'https://github.com/dominikbutz/DYBadgeButton.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/DominikButz/DYBadgeButton.git', :tag => s.version.to_s }
 
 
   s.ios.deployment_target = '8.0'

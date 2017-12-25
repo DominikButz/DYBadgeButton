@@ -87,6 +87,8 @@ Check out the following examples.
 ![DYBadgeButton example](./gitResources/DYBadgeButtonExample2.gif "Badge Button example 2") 
 
 ## Change log
+#### [Version 0.3.4](https://github.com/DominikButz/DYBadgeButton/releases/tag/0.3.4)
+corrections in Podspecs file
 #### [Version 0.3.3](https://github.com/DominikButz/DYBadgeButton/releases/tag/0.3.3)
 Adding header file
 #### [Version 0.3.2](https://github.com/DominikButz/DYBadgeButton/releases/tag/0.3.2)
