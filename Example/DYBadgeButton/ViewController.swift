@@ -24,9 +24,7 @@ class ViewController: UIViewController {
         self.firstSlider.isContinuous = false
         
         self.firstButton.badgeFont = UIFont(name: "Helvetica Neue", size: 11.0)!
-        self.firstButton.badgeString = "5"
-        self.firstSlider.value = 5.0
-        
+        self.firstSlider.value = 0
         
         self.secondSlider.isContinuous = false
         let frame =  CGRect(x: 0, y: 0, width: 25.0, height: 26.0)
@@ -38,7 +36,6 @@ class ViewController: UIViewController {
         filterButton.yOffset = -5.0
         self.secondButtonItem.customView = filterButton
 
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

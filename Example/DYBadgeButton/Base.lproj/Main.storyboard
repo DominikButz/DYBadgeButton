@@ -34,29 +34,43 @@
                                     <action selector="sliderValueDidChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="eHO-hM-elG"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQj-Uh-X6R" customClass="DYBadgeButton" customModule="DYBadgeButton">
-                                <rect key="frame" x="16" y="111" width="37" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="sendButton"/>
-                            </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="pK7-N4-SLo">
-                                <rect key="frame" x="10" y="573" width="354" height="31"/>
+                                <rect key="frame" x="10" y="583" width="354" height="31"/>
                                 <connections>
                                     <action selector="sliderValueDidChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="y7h-my-psn"/>
                                 </connections>
                             </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0022" translatesAutoresizingMaskIntoConstraints="NO" id="U9M-fD-nsf">
+                                <rect key="frame" x="16" y="133" width="343" height="442"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="8Gb-eD-vvD"/>
+                                    <constraint firstAttribute="height" constant="442" id="xbe-Z9-97g"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQj-Uh-X6R" customClass="DYBadgeButton" customModule="DYBadgeButton">
+                                <rect key="frame" x="14" y="85" width="37" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="IPt-R9-kki"/>
+                                    <constraint firstAttribute="width" constant="37" id="sPp-rD-eax"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="sendButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Fiw-5j-VvR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="5hO-DL-L8b"/>
+                            <constraint firstItem="KQj-Uh-X6R" firstAttribute="top" secondItem="YR6-dw-00M" secondAttribute="bottom" constant="8" id="837-Do-wi7"/>
                             <constraint firstItem="YR6-dw-00M" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="J2a-Je-TdR"/>
                             <constraint firstAttribute="trailing" secondItem="Fiw-5j-VvR" secondAttribute="trailing" id="J5C-Vq-hII"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Fiw-5j-VvR" secondAttribute="bottom" id="Qhj-sz-6I5"/>
+                            <constraint firstItem="U9M-fD-nsf" firstAttribute="top" secondItem="KQj-Uh-X6R" secondAttribute="bottom" constant="10" id="W5a-LZ-NBO"/>
                             <constraint firstItem="YR6-dw-00M" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="WN6-6n-Mc7"/>
                             <constraint firstItem="pK7-N4-SLo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="12" id="Z7N-vb-0o9"/>
+                            <constraint firstItem="KQj-Uh-X6R" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="14" id="cIu-zb-xx6"/>
                             <constraint firstItem="YR6-dw-00M" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="27" id="m0c-T7-dpZ"/>
                             <constraint firstAttribute="trailing" secondItem="pK7-N4-SLo" secondAttribute="trailing" constant="13" id="mAA-u0-Rbu"/>
-                            <constraint firstItem="Fiw-5j-VvR" firstAttribute="top" secondItem="pK7-N4-SLo" secondAttribute="bottom" constant="20" id="ziS-rO-SaA"/>
+                            <constraint firstItem="U9M-fD-nsf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="s1k-6H-M8Y"/>
+                            <constraint firstItem="Fiw-5j-VvR" firstAttribute="top" secondItem="pK7-N4-SLo" secondAttribute="bottom" constant="10" id="ziS-rO-SaA"/>
                         </constraints>
                     </view>
                     <connections>
@@ -72,6 +86,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IMG_0022" width="556" height="720"/>
         <image name="sendButton" width="24" height="25"/>
     </resources>
 </document>

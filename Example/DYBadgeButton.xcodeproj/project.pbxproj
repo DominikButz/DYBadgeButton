@@ -30,8 +30,7 @@
 /* Begin PBXFileReference section */
 		1F402F8920D3CEC6CCBF1A61 /* Pods-DYBadgeButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYBadgeButton_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYBadgeButton_Tests/Pods-DYBadgeButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2C62EA58069C6B7AA7EEC25E /* Pods_DYBadgeButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYBadgeButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		30C161E9FE8C288FF7813AD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3BB75B1EE2E05EB4FF868667 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		30C161E9FE8C288FF7813AD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		45B0163D2A70C444624C78A2 /* Pods_DYBadgeButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYBadgeButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* DYBadgeButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYBadgeButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		623A0847F1822922C3685762 /* Pods-DYBadgeButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYBadgeButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYBadgeButton_Tests/Pods-DYBadgeButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		81E55AAF9D0909C7A4D1D3BF /* Pods-DYBadgeButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYBadgeButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYBadgeButton_Example/Pods-DYBadgeButton_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A17B703B8DB3075271EE24C4 /* DYBadgeButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DYBadgeButton.podspec; path = ../DYBadgeButton.podspec; sourceTree = "<group>"; };
+		A17B703B8DB3075271EE24C4 /* DYBadgeButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DYBadgeButton.podspec; path = ../DYBadgeButton.podspec; sourceTree = "<group>"; };
 		F898B28CA29065CE424DFE66 /* Pods-DYBadgeButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYBadgeButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYBadgeButton_Example/Pods-DYBadgeButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				A17B703B8DB3075271EE24C4 /* DYBadgeButton.podspec */,
-				3BB75B1EE2E05EB4FF868667 /* README.md */,
 				30C161E9FE8C288FF7813AD7 /* LICENSE */,
 			);
 			name = "Podspec Metadata";

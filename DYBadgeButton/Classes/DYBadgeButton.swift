@@ -18,8 +18,6 @@ extension UIButton {
         
         let titleSize = self.titleLabel!.frame.size
         let totalHeight = imageSize.height + titleSize.height + padding
-        print("image height: \(imageSize.height)")
-        print("total height: \(totalHeight)")
         
         self.imageEdgeInsets = UIEdgeInsets(
             top: -(totalHeight - imageSize.height),
@@ -37,33 +35,33 @@ extension UIButton {
     }
 }
 
-@IBDesignable public class DYBadgeButton: UIButton {
+public class DYBadgeButton: UIButton {
 
-    var badge: UILabel = UILabel()
+    private var badge: UILabel = UILabel()
 
-    
-   @IBInspectable open var badgeString:String? {
+    /// The text of the badge
+    open var badgeString:String? {
         didSet{
             
+            let wasNullishBefore = self.isNullish(self.badge.text)
+            
             self.badge.text = badgeString
-            print("badge string \(badgeString)")
-            self.setBadgeSizeAndFrame()
+
+            self.setBadgeSizeAndFrame(animated: !wasNullishBefore)
 
             var transform: CGAffineTransform?
             var shouldHide: Bool?
             
-            if self.badge.isHidden && self.badgeHasValue() {
+            if self.badge.isHidden && self.isNullish(badgeString) == false {
                 // is hidden but should appear
                 self.badge.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
-                print("badge is hidden, has value, target transform is identity")
                 transform = CGAffineTransform.identity
                 shouldHide = false
           
             }
             
-            else if self.badge.isHidden == false && self.badgeHasValue() == false {
+            else if self.badge.isHidden == false && self.isNullish(badgeString) {
                 // should disappear
-                     print("badge is  not hidden, has  no value, target transform 0.01 0.01")
                 transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
                 shouldHide = true
 
@@ -72,39 +70,42 @@ extension UIButton {
                 return
             }
     
-            self.animateBadge(shouldHide: shouldHide!,transform: transform!)
+            self.animateBadgeTransform(shouldHide: shouldHide!,transform: transform!)
 
         }
     }
-    
+    /// The font of the badge text
    open var badgeFont: UIFont = UIFont(name: "Helvetica Neue", size: 9.0)! {
         didSet {
             self.badge.font = badgeFont
-            self.setBadgeSizeAndFrame()
+            self.setBadgeSizeAndFrame(animated: false)
         }
     }
     
-   @IBInspectable open var badgeColor: UIColor = UIColor.red {
+    /// The background color of the badge
+   open var badgeColor: UIColor = UIColor.red {
         didSet {
             self.badge.backgroundColor = badgeColor
         }
     }
-    
-  @IBInspectable open var badgeTextColor: UIColor = UIColor.white {
+    /// The text color of the badge
+  open var badgeTextColor: UIColor = UIColor.white {
         didSet {
             self.badge.textColor = badgeTextColor
         }
     }
     
-    @IBInspectable  open var xOffset: CGFloat = 0.0 {
+    /// Position x offset of the badge.
+    open var xOffset: CGFloat = 0.0 {
         didSet {
-            self.setBadgeSizeAndFrame()
+            self.setBadgeSizeAndFrame(animated: false)
         }
     }
     
-    @IBInspectable open var yOffset: CGFloat = 0.0 {
+     /// Position y offset of the badge.
+    open var yOffset: CGFloat = 0.0 {
         didSet {
-            self.setBadgeSizeAndFrame()
+            self.setBadgeSizeAndFrame(animated: false)
         }
     }
     
@@ -118,14 +119,15 @@ extension UIButton {
         self.setupBadge()
     }
 
-    public convenience init(frame: CGRect,badgeXoffset: CGFloat?, badgeYoffset: CGFloat?) {
-        self.init(frame: frame)
-
-        self.setupBadge()
-    }
-    
-    
-   public class func createDYImageTitleButton(image: UIImage, title: String, font: UIFont, frame: CGRect, tintColor: UIColor)->DYBadgeButton {
+    /// createDYImageTitleButton - class function to create a DYBadgeButton with image and button title
+    ///
+    /// - Parameters:
+    ///   - image: the button image
+    ///   - title: the title of the button title label
+    ///   - font: the text font of the button title label
+    ///   - frame: the frame of the button image view
+    ///   - tintColor: the button tint color (for the image view and the title)
+   public class func createDYImageTitleButton(image: UIImage, title: String, font: UIFont, frame: CGRect, tintColor: UIColor?)->DYBadgeButton {
 
         let button = DYBadgeButton(frame: frame)
         button.contentMode = .scaleAspectFit
@@ -150,52 +152,74 @@ extension UIButton {
         self.badge.backgroundColor = self.badgeColor
         self.badge.textColor = self.badgeTextColor
         
-        self.setBadgeSizeAndFrame()
+        self.setBadgeSizeAndFrame(animated: false)
 
-        self.badge.isHidden = !self.badgeHasValue()
-       // self.badge.transform = self.badgeHasValue() ?  CGAffineTransform.identity : CGAffineTransform(scaleX: 0.01, y: 0.01)
-    //    print("setup badge is hidden? \(self.badge.isHidden)")
+        self.badge.isHidden = self.isNullish(badgeString)
+
         self.addSubview(self.badge)
 
     }
     
 
-    private func setBadgeSizeAndFrame() {
+    private func setBadgeSizeAndFrame(animated: Bool) {
         
-        if self.badgeHasValue() == false {
+        if self.isNullish(badgeString) {
             return
         }
         
         let sizeLabel = UILabel()
         sizeLabel.text = self.badgeString!
-       // sizeLabel.text = self.badgeHasValue() ? self.badgeString : "XX"
         sizeLabel.font = self.badgeFont
         sizeLabel.sizeToFit()
         let badgeSize = sizeLabel.frame.size
-        
+    
         let positionX = self.bounds.size.width
-        print("button width \(positionX)")
         let positionY = self.bounds.origin.y
-        print("button oriigin y \(positionY)")
-        
+
         self.badge.transform = CGAffineTransform.identity
         
-        self.badge.frame = CGRect(x: positionX + self.xOffset, y: positionY + self.yOffset, width: badgeSize.width + 8.0, height: badgeSize.height + 2.0)
-        self.badge.clipsToBounds = true
-        self.badge.layer.cornerRadius = self.badge.bounds.height / 2.0
+        let frame = CGRect(x: positionX + self.xOffset, y: positionY + self.yOffset, width: badgeSize.width + 8.0, height: badgeSize.height + 2.0)
         
-        print("badge width: \(self.badge.frame.size.width)")
-        print("badge origin x \(self.badge.frame.origin.x), origin y \(self.badge.frame.origin.y)")
+        if animated {
+            UIView.animate(withDuration: 0.1) {
+                self.badge.frame = frame
+                self.badge.layer.cornerRadius = self.badge.bounds.height / 2.0
+            }
+        } else {
+        
+            self.badge.frame = frame
+            self.badge.layer.cornerRadius = self.badge.bounds.height / 2.0
+
+        }
+        
+          self.badge.clipsToBounds = true
 
     }
     
-    private func badgeHasValue()-> Bool {
+    private func isNullish(_ stringValue: String?)-> Bool {
         
-        return badgeString != nil  && badgeString != "0" && badgeString != ""
+        if stringValue == nil {
+            return true
+        }
+        
+        let stringWithoutWhitespaces = stringValue!.components(separatedBy: .whitespaces).joined()
+        
+        if stringWithoutWhitespaces == "" {
+            return true
+        }
+        
+        let intValue = Int(stringWithoutWhitespaces)
+        
+        if intValue == 0 {
+            return true
+        }
+        
+        return false
+
     }
     
-    private func animateBadge(shouldHide: Bool, transform: CGAffineTransform) {
-        print("animating badge")
+    private func animateBadgeTransform(shouldHide: Bool, transform: CGAffineTransform) {
+
         let springValue:CGFloat = shouldHide ? 0.0 : 0.4
         
         if shouldHide == false {
@@ -204,10 +228,7 @@ extension UIButton {
   
         }
 
-    
         UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: springValue, initialSpringVelocity: 0.0, options: [], animations: {
-
-            print("animation started. transform is identiy? \(transform == CGAffineTransform.identity)")
             self.badge.transform = transform
             
         }) { (completed) in

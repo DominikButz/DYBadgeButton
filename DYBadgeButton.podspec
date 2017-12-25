@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DYBadgeButton'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DYBadgeButton.'
+  s.version          = '0.3.1'
+  s.summary          = 'UI Button with an animated badge'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    DYBadgeButton features a UIButton with a pop up badge. If the string value of the badge changes from nil (or "nullish") to a valid string value  at runtime the badge will appear with a pop up effect. If it switches back to a "nullish" value, it will shrink and disappear.
+    The class also includes a class function to create a button with an image and a title, which is positioned underneath the image.
                        DESC
 
   s.homepage         = 'https://github.com/dominikbutz/DYBadgeButton'
