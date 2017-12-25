@@ -15,6 +15,7 @@
 		70B00711B8D5B2F5F8FFF8F19002C3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		86FE0D30B49A6106138BB782E6D9B9ED /* Pods-DYBadgeButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 483CF693F20FD065A5EC846848A8BD14 /* Pods-DYBadgeButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B400295F1FEF6846007241E3 /* DYBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B400295E1FEF6845007241E3 /* DYBadgeButton.swift */; };
+		B4D1283D1FF1652C0021CE31 /* DYBadgeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D1283C1FF1652C0021CE31 /* DYBadgeButton.h */; };
 		B62608E19AAACE693312AE04553C7775 /* Pods-DYBadgeButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C230C19FB135E0352B4EB3C4501653 /* Pods-DYBadgeButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED5DA29917DB352E0F89A2E021E61F67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		AECF9130901162A478C61A48C4698EA9 /* Pods-DYBadgeButton_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DYBadgeButton_Tests-resources.sh"; sourceTree = "<group>"; };
 		B02D74F25EA2E00C18B048A784AE134C /* DYBadgeButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DYBadgeButton.modulemap; sourceTree = "<group>"; };
 		B400295E1FEF6845007241E3 /* DYBadgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DYBadgeButton.swift; path = DYBadgeButton/Classes/DYBadgeButton.swift; sourceTree = "<group>"; };
+		B4D1283C1FF1652C0021CE31 /* DYBadgeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DYBadgeButton.h; path = DYBadgeButton/Classes/DYBadgeButton.h; sourceTree = "<group>"; };
 		C45AA798FA5D8290F9511E7C79D023A1 /* Pods-DYBadgeButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DYBadgeButton_Example.modulemap"; sourceTree = "<group>"; };
 		D8F1865A630D075E459C17FE649B5B7D /* Pods-DYBadgeButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DYBadgeButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		D93FB7EFFBE48EDE24C5EBBB54D2C1FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B400295E1FEF6845007241E3 /* DYBadgeButton.swift */,
+				B4D1283C1FF1652C0021CE31 /* DYBadgeButton.h */,
 				F8371162B4AC6DCBA7DE3562F12FE71C /* Support Files */,
 			);
 			name = DYBadgeButton;
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				541E06C3D5FE40A3E488000CAAEE2FD7 /* DYBadgeButton-umbrella.h in Headers */,
+				B4D1283D1FF1652C0021CE31 /* DYBadgeButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
