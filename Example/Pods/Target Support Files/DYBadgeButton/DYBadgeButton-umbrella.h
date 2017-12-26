@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "DYBadgeButton.h"
 
 FOUNDATION_EXPORT double DYBadgeButtonVersionNumber;
 FOUNDATION_EXPORT const unsigned char DYBadgeButtonVersionString[];
