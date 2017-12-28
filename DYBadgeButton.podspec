@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DYBadgeButton'
-  s.version          = '0.3.6'
+  s.version          = '0.3.7'
   s.summary          = 'UI Button with an animated badge, written in Swift 4'
 
 # This description is used to generate tags and improve search results.
