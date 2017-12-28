@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/DYBadgeButton.svg?style=flat)](http://cocoapods.org/pods/DYBadgeButton)
 [![License](https://img.shields.io/cocoapods/l/DYBadgeButton.svg?style=flat)](http://cocoapods.org/pods/DYBadgeButton)
 [![Platform](https://img.shields.io/cocoapods/p/DYBadgeButton.svg?style=flat)](http://cocoapods.org/pods/DYBadgeButton)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 
  DYBadgeButton (written in Swift 4) features a UIButton with a pop up badge. If the string value of the badge changes from nil (or "nullish") to a valid string value at runtime the badge will appear with a pop up effect. If it switches back to a "nullish" value, it will shrink and disappear.
@@ -21,12 +22,14 @@ To checkout the example project, simply clone the repo or download the zip file.
 
 ## Installation
 
-DYBadgeButton is available through [CocoaPods](https://cocoapods.org/?q=dybadgebutton). To install
-it, simply add the following line to your Podfile:
+Because of some parsing problem, installation through cocoapods might currently not work.  
 
-```ruby
-pod 'DYBadgeButton'
-```
+Therefore installation through Carthage is recommended. Simply add the following line to your Cartfile:
+github "DominikButz/DYBadgeButton" ~> 0.3.7
+
+Replace the version number with the shown in the header above. 
+
+Afterwards, run "carthage update DYBadgeButton --platform iOS" in the root directory of your project. Follow the steps described in the carthage project on github (click on the carthage compatible shield above). 
 
 Make sure to import DYBadgeButton into your View Controller subclass:
 
