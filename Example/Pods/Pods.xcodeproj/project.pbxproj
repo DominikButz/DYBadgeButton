@@ -16,6 +16,7 @@
 		86FE0D30B49A6106138BB782E6D9B9ED /* Pods-DYBadgeButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 483CF693F20FD065A5EC846848A8BD14 /* Pods-DYBadgeButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B400295F1FEF6846007241E3 /* DYBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B400295E1FEF6845007241E3 /* DYBadgeButton.swift */; };
 		B4D1283D1FF1652C0021CE31 /* DYBadgeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D1283C1FF1652C0021CE31 /* DYBadgeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4D128461FF5506A0021CE31 /* DYBadgeButton.h in Sources */ = {isa = PBXBuildFile; fileRef = B4D1283C1FF1652C0021CE31 /* DYBadgeButton.h */; };
 		B62608E19AAACE693312AE04553C7775 /* Pods-DYBadgeButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C230C19FB135E0352B4EB3C4501653 /* Pods-DYBadgeButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED5DA29917DB352E0F89A2E021E61F67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -300,6 +301,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					17E50FDA3AD4E210F1B2C31A8FAC7E44 = {
+						LastSwiftMigration = 0920;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -325,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D128461FF5506A0021CE31 /* DYBadgeButton.h in Sources */,
 				B400295F1FEF6846007241E3 /* DYBadgeButton.swift in Sources */,
 				5F966D0514E7786D2918130C4BFB15BB /* DYBadgeButton-dummy.m in Sources */,
 			);
@@ -509,6 +516,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -598,6 +606,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
