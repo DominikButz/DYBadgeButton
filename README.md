@@ -87,6 +87,8 @@ Check out the following examples.
 ![DYBadgeButton example](./gitResources/DYBadgeButtonExample2.gif "Badge Button example 2") 
 
 ## Change log
+#### [Version 0.3.7](https://github.com/DominikButz/DYBadgeButton/releases/tag/0.3.7)
+Framework Build phase corrections.
 #### [Version 0.3.5](https://github.com/DominikButz/DYBadgeButton/releases/tag/0.3.5)
 correting header umbrella file
 #### [Version 0.3.4](https://github.com/DominikButz/DYBadgeButton/releases/tag/0.3.4)
