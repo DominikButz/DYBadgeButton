@@ -64,7 +64,7 @@ Check out the following examples.
 
 ```
 
-![DYBadgeButton example](./gitResources/DYBadgeButtonExample1.gif "Badge Button example 1") 
+![DYBadgeButton example](./gitResources/DYBadgeButtonExample1-small.gif "Badge Button example 1") 
 
 ### Code example: Creating a DYBadgeButton with image and title
 
@@ -87,7 +87,7 @@ Check out the following examples.
 		self.secondButtonItem.customView = filterButton
 	}
 ```
-![DYBadgeButton example](./gitResources/DYBadgeButtonExample2.gif "Badge Button example 2") 
+![DYBadgeButton example](./gitResources/DYBadgeButtonExample2-small.gif "Badge Button example 2") 
 
 ## Change log
 #### [Version 0.3.7](https://github.com/DominikButz/DYBadgeButton/releases/tag/0.3.7)
