@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/DYBadgeButton.svg?style=flat)](http://cocoapods.org/pods/DYBadgeButton)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-
+**Deprecated - use DYBadge instead**
  DYBadgeButton (written in Swift 4) features a UIButton with a pop up badge. If the string value of the badge changes from nil (or "nullish") to a valid string value at runtime the badge will appear with a pop up effect. If it switches back to a "nullish" value, it will shrink and disappear.
 The class also includes a class function to create a button with an image and a title, which is positioned underneath the image. 
 
